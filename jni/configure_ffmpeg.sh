@@ -40,6 +40,7 @@ $featureflags \
 --disable-indev=v4l \
 --disable-indev=v4l2 \
 --extra-cflags="-I../x264" \
---extra-ldflags="-L../x264" 
+--extra-ldflags="-L../x264" \
+--extra-libs="-lgcc -L$NDK/toolchains/arm-linux-androideabi-4.4.3/prebuilt/linux-x86/lib/gcc/arm-linux-androideabi/4.4.3" 
 
 popd; popd

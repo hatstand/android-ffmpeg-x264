@@ -3,7 +3,7 @@
 # set to path of your NDK (or export NDK to environment)
 
 if [[ "x$NDK" == "x" ]]; then
-NDK=~/apps/android-ndk-r5c
+NDK=~/build/android-ndk-r6
 fi
 # i use only a small number of formats - set this to 0 if you want everything.
 # changed 0 to the default, so it'll compile shitloads of codecs normally
@@ -22,6 +22,7 @@ function current_dir {
   echo "$(cd "$(dirname $0)"; pwd)"
 }
 
+export CFLAGS="-mcpu=cortex-a8 -mfpu=vfpv3-d16"
 export PATH=$PATH:$NDK:$(current_dir)/toolchain/bin
 
 echo $PATH
