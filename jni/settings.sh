@@ -22,7 +22,7 @@ function current_dir {
   echo "$(cd "$(dirname $0)"; pwd)"
 }
 
-export CFLAGS="-mcpu=cortex-a8 -mfpu=vfpv3-d16"
+export CFLAGS="-mcpu=cortex-a9 -mfpu=vfpv3-d16"
 export PATH=$PATH:$NDK:$(current_dir)/toolchain/bin
 
 echo $PATH
