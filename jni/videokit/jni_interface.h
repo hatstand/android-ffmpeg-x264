@@ -63,6 +63,20 @@ JNIEXPORT void JNICALL Java_uk_co_halfninja_videokit_Videokit_setOutput
 JNIEXPORT void JNICALL Java_uk_co_halfninja_videokit_Videokit_deinitialise
   (JNIEnv *, jobject);
 
+/*
+ * Class:     uk_co_halfninja_videokit_Videokit
+ * Method:    doStuff
+ * Signature: (Landroid/graphics/Bitmap)V
+ */
+JNIEXPORT void JNICALL Java_uk_co_halfninja_videokit_Videokit_doStuff(JNIEnv* env, jobject self, jobject bitmap);
+
+/*
+ * Class:     uk_co_halfninja_videokit_Videokit
+ * Method:    stop
+ * Signature: ()V
+ */
+JNIEXPORT void JNICALL Java_uk_co_halfninja_videokit_Videokit_stop(JNIEnv* env, jobject self);
+
 #ifdef __cplusplus
 }
 #endif

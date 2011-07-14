@@ -2,5 +2,5 @@
 pushd `dirname $0`
 . settings.sh
 pushd ffmpeg
-make
+make -j9
 popd; popd
